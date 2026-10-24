@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 import { redesData } from '../data/redesData';
 import { toast } from "react-toastify"
 
@@ -17,7 +17,7 @@ export default function Contacto() {
             return;
         }
 
-        emailjs.sendForm('service_4ahhxwl', 'template_dm4vv9y', form.current, 'IYV1jTyhjv08dD_Qs')
+        emailjs.sendForm('service_4ahhxwl', 'template_dm4vv9y', form.current, { publicKey: 'IYV1jTyhjv08dD_Qs' })
         .then((result) => {
         toast.success("Mensaje Enviado Correctamente", {
             theme: "colored"

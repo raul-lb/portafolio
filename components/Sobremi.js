@@ -10,7 +10,7 @@ export default function Sobremi() {
                     <div className="md:w-2/5">
                         <img 
                             src="/img/aboutme.webp" 
-                            alt="Imagen Edwin Santos Developer"
+                            alt="Imagen de Raúl Larrea, Ingeniero Informático"
                         />
                     </div>
                     <div className="md:w-3/5">

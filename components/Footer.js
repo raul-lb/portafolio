@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-center items-center md:items-start md:justify-between mx-3 md:mx-0 py-10 font-body">
                     <div className="flex flex-col items-center md:items-start md:text-left justify-center mb-5 md:mb-0 text-center md:w-1/3 [text-wrap:balance]">
                         <a href="#">
-                            <Image src="/img/logo.svg" width={110} height={35} alt="Logo EdwinSantos" />
+                            <Image src="/img/logo.svg" width={110} height={35} alt="Logo Raúl Larrea" />
                         </a>
                         <p className="text-white ">Transformando ideas en realidad a traves de codigo limpio y soluciones innovadoras</p>
                         <ul className='flex gap-4 mt-4'>
@@ -44,7 +44,7 @@ export default function Footer() {
                                 </li>
                             ))}
                         </ul>
-                        <p className="text-white ">por <span className="font-semibold text-sm hover:text-colorboton">Edwin Santos</span></p>
+                        <p className="text-white ">por <span className="font-semibold text-sm hover:text-colorboton">Raúl Larrea</span></p>
                     </div>
                 </div>
             </div>

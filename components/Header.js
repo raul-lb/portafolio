@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function Header() {
     <nav className="fixed w-full top-0 z-50 bg-black backdrop-blur-lg bg-opacity-60">
       <div className="max-w-screen-xl px-5 mg:px-0 flex flex-wrap items-center justify-between mx-auto md:w-5/6 lg:w-4/6 py-3 md:pl-0 ">
         <a href='#inicio' className="flex items-center pl-0">
-          <img src="/img/logo.svg" width={110} height={35} alt="Logo EdwinSantos" />
+          <img src="/img/logo.svg" width={110} height={35} alt="Logo Raúl Larrea" />
         </a>
         <button
           onClick={toggleMenu}
@@ -27,9 +27,9 @@ export default function Header() {
         >
           <span className="sr-only">Open main menu</span>
           {isMenuOpen ? (
-            <XIcon className="w-7 h-7 text-white" aria-hidden="true" />
+            <XMarkIcon className="w-7 h-7 text-white" aria-hidden="true" />
           ) : (
-            <MenuIcon className="w-7 h-7 text-white" aria-hidden="true" />
+            <Bars3Icon className="w-7 h-7 text-white" aria-hidden="true" />
           )}
         </button>
         <div
@@ -56,7 +56,7 @@ export default function Header() {
 const enlaces = [
   {
       id:1,
-      name: "Sobre mi",
+      name: "Sobre mí",
       link: "#sobremi"
   },
   {

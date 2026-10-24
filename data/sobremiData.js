@@ -1,6 +1,6 @@
 export const sobremiData = {
-    titulo: "¿Quien Soy?",
-    descripcion1: "Soy Edwin Antonio Chacón, y mi pasión por la tecnología, la programación y el diseño me impulsa cada día. Como desarrollador web, me he especializado en el fascinante mundo del FrontEnd. ",
+    titulo: "¿Quién Soy?",
+    descripcion1: "Soy Raúl Larrea, y mi pasión por la tecnología, la programación y el diseño me impulsa cada día. Como desarrollador web, me he especializado en el fascinante mundo del FrontEnd. ",
     descripcion2: "Disfruto desafiando los límites y explorando nuevas tecnologías para ofrecer soluciones creativas y efectivas.",
     descripcion3: "Innovador, proactivo y con capacidad para diseñar, crear y mantener sitios web, atractivos e interactivos. Me adapto a las necesidades del equipo y me comprometo con los objetivos de trabajo establecidos.",
     imagen: "sobremi"
@@ -15,7 +15,7 @@ export const habilidadesData = [
     },
     {
         id:2,
-        name: "FrontEnd Developer",
+        name: "Ingeniero Informático",
         icon: "frontend",
         description: "Creación de interfaces de usuarios innovadoras con buenas prácticas, diseños responsives y optimizaciones del contenido"
     },

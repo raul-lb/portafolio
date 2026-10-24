@@ -1,7 +1,7 @@
 export const headerData = {
-    nombre: "Edwin Santos",
-    titulo: "FrontEnd Developer",
-    descripcion: "Transformando ideas en realidad a través de código limpio y soluciones innovadoras",
-    imagen: "edwinsantos"
+    nombre: "Raúl Larrea",
+    titulo: "Ingeniero Informático",
+    descripcion: "Apasionado por la tecnología ",
+    imagen: "raullarrea.png",
 }
 

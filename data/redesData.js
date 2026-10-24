@@ -3,32 +3,20 @@ export const redesData = [
         id: 1,
         nombre: "Linkedin",
         imagen: "linkedin",
-        sitioWeb: "https://www.linkedin.com/in/edwinsantosdev/"
+        sitioWeb: "https://www.linkedin.com/in/ra%C3%BAl-larrea-baldov%C3%AD/"
     },
     {
         id: 2,
-        nombre: "Instagram",
-        imagen: "instagram",
-        sitioWeb: "https://www.instagram.com/edwinsantosdev/"
-    },
-    {
-        id: 3,
-        nombre: "Twitter",
-        imagen: "twitter",
-        sitioWeb: "https://twitter.com/EdwinSantosDev"
-    },
-    {
-        id: 4,
         nombre: "Github",
         imagen: "github",
-        sitioWeb: "https://github.com/Hardash01"
+        sitioWeb: "https://github.com/raul-lb"
     }
 ]
 
 export const enlacesData = [
     {
         id:1,
-        name: "Sobre mi",
+        name: "Sobre mí",
         link: "#sobremi"
     },
     {

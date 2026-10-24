@@ -1,106 +1,61 @@
 export const proyectosData = [
     {
         id: 1,
-        nombreProyecto: "Bienes Raices",
-        descripcionProyecto: "Sitio web de venta y alquiler de propiedades con diversas funcionalidades del Framework NextJs",
-        sitioWeb: "https://bienesraices-alpha.vercel.app/",
-        github: "https://github.com/Hardash01/bienesraices",
-        imagenes: [
-            "bienesraices-desktop",
-            "bienesraices-movil",
-            "bienesraices-tablet"
-        ],
+        nombreProyecto: "Binding: La red social para lectores",
+        descripcionProyecto: "Aplicación multiplataforma en la que los usuarios pueden descubrir nuevos libros, compartir sensaciones y conectar con otros amantes de la lectura o los propios autores. Cuenta con un catálogo de libros en el que los usuarios pueden publicar reseñas, añadir libros a sus listas personales y explorar las recomendaciones de otros miembros de la comunidad.",
+        imagen: "binding-desktop-cropped.png",
         tecnologias: [
-            {
-                name: "TailwindCss",
-                image: "tailwind"
-            },
-            {
-                name: "NextJs",
-                image: "nextjs",
-            },
             {
                 name: "React",
                 image: "react"
+            },
+            {
+                name: "Spring Boot (Java)",
+                image: "springboot"
+            },
+            {
+                name: "Supabase",
+                image: "supabase"
             }
         ]
     },
     {
         id: 2,
-        nombreProyecto: "Landing Page Webtech",
-        descripcionProyecto: "Sitio web de soluciones digitales en creaciones webs impactantes y efectivas, creado con Vite + React",
-        sitioWeb: "https://www.creacioneswebtech.com/",
-        github: "https://github.com/Hardash01/creaciones-webtech",
-        imagenes: [
-            "webtech-desktop",
-            "webtech-movil",
-            "webtech-tablet"
-        ],
+        nombreProyecto: "TFG - Cartelera centralizada de cine con comparación y recomendación de sesiones",
+        descripcionProyecto: "Plataforma web que centraliza la cartelera de cine integrando múltiples fuentes mediante APIs y web scraping para permitir la consulta, comparación y descubrimiento eficiente de sesiones. Enriquece los datos con servicios como TMDB/OMDb e incorpora filtros avanzados, comparación de precios y formatos, notificaciones de venta anticipada y recomendaciones personalizadas por IA.",
+        imagen: "tfg-desktop-cropped.png",
         tecnologias: [
             {
-                name: "TailwindCss",
-                image: "tailwind"
-            },
-            {
-                name: "Vite",
-                image: "vite",
+                name: "NextJs",
+                image: "nextjs"
             },
             {
                 name: "React",
                 image: "react"
-            }
-        ]
-    }
-    ,
-    {
-        id: 3,
-        nombreProyecto: "Tienda de Guitarras",
-        descripcionProyecto: "Tienda con carrito de compra, creada con NextJs y en clones con Remix Run y Astro, con PostgreSQL Strapi",
-        sitioWeb: "https://guitar-la-next-js-ifci.vercel.app/",
-        github: "https://github.com/Hardash01/GuitarLaNextJs",
-        imagenes: [
-            "guitarla-desktop",
-            "guitarla-movil",
-            "guitarla-tablet"
-        ],
-        tecnologias: [
-            {
-                name: "Css",
-                image: "css"
             },
             {
-                name: "NextJs",
-                image: "nextjs",
-            },
-            {
-                name: "Strapi",
-                image: "strapi"
+                name: "TailwindCss",
+                image: "tailwind"
             }
         ]
     },
     {
-        id: 4,
-        nombreProyecto: "Control de Presupuesto",
-        descripcionProyecto: "Aplicacion web para poder realizar un control de gastos con diversas opciones y categorias de gastos",
-        sitioWeb: "https://administradordegastosreact.netlify.app/",
-        github: "https://github.com/Hardash01/planificador_gastos",
-        imagenes: [
-            "appgastos-desktop",
-            "appgastos-movil",
-            "appgastos-tablet"
-        ],
+        id: 3,
+        nombreProyecto: "SolidarityHub",
+        descripcionProyecto: "Aplicación móvil y web diseñada para optimizar la prevención, respuesta y recuperación ante catástrofes naturales o humanas. Nace de la necesidad real de coordinar eficazmente recursos, voluntarios y donaciones durante situaciones de crisis.",
+        imagen: "solidarityhub-desktop-cropped.png",
         tecnologias: [
             {
-                name: "Css",
-                image: "css"
+                name: "Flutter",
+                image: "flutter"
             },
             {
-                name: "Vite",
-                image: "vite",
+                name: "C# .NET",
+                image: "dotnet"
             },
             {
-                name: "React",
-                image: "react"
+                name: "MySQL",
+                image: "mysql"
             }
         ]
     }

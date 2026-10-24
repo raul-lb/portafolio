@@ -1,72 +1,63 @@
-import { useState } from "react";
 import { proyectosData } from "../data/proyectosData";
-import ProyCard from "./ProyCard";
 import { IconGlobal, IconGithub } from "./Icons";
 
 export default function Proyectos() {
-    const [ bigProyImgs, setBigProyImgs ] = useState({})
-    const updateBigProyImg = (proyectoId, imgURL) => {
-        setBigProyImgs((prevBigProyImgs) => ({
-            ...prevBigProyImgs,
-            [proyectoId]: imgURL,
-        }));
-    };
-
     return(
         <div>
             <div id="proyectos" className="max-w-screen-xl mx-auto md:w-5/6 lg:w-4/6 pt-10">
                 <h2 className="text-4xl font-title font-extrabold tracking-wider leading-none md:text-5xl lg:text-5xl text-white text-center mt-5 mb-10">Proyectos</h2>
                 <div className="grid place-content-center md:grid-cols-2 lg:grid-cols-2 gap-6 mb-10 md:mx-0 px-3 md:px-0">
                     {proyectosData.map(proyecto =>{
-                        const bigProyImg = bigProyImgs[proyecto.id] || proyecto.imagenes[0];
+                        const imageFile = proyecto.imagen && (/\.(avif|webp|png|jpe?g|svg)$/i.test(proyecto.imagen) ? proyecto.imagen : `${proyecto.imagen}.webp`);
                         return (
                             <div key={proyecto.id} 
                                 className=" overflow-hidden flex flex-col bg-black border border-grisclaro border-opacity-20 bg-opacity-20 rounded-lg">
-                                <div className='flex flex-col lg:flex-row justify-center items-center px-3'>
-                                    <div className="lg:order-2">
-                                        <img
-                                            src={`/img/${bigProyImg}.webp`}
-                                            alt={`imagen ${bigProyImg}`}
-                                            className=''
-                                        />
-                                    </div>
-                                    <div className='flex lg:flex-col items-center space-x-4 lg:space-x-0 lg:space-y-2 justify-center lg:order-1'>
-                                    {proyecto.imagenes.map((image, index) => (
-                                        <div key={index} className="transition-all duration-300 hover:shadow-[0_0_10px_1px_rgba(30,125,103,0.7)] rounded-lg">
-                                            <ProyCard
-                                                index={index}
-                                                imgURL={image}
-                                                changeBigProyImage={(proy) => updateBigProyImg(proyecto.id, proy)}
-                                                bigProyImg={bigProyImg}
-                                                isFirstImage={index === 0}
+                                <div className="flex min-h-[84px] flex-col items-center justify-center border-b border-white/10 bg-gradient-to-r from-transparent via-white/[0.03] to-transparent px-5 py-3 text-center">
+                                    <h5 className="mx-auto w-fit max-w-full rounded-md bg-[#20bfa9]/20 px-3 py-2 text-xl font-bold leading-6 tracking-tight text-white shadow-[0_0_18px_rgba(32,191,169,0.14)]">
+                                        {proyecto.nombreProyecto}
+                                    </h5>
+                                </div>
+                                {imageFile && (
+                                    <div className="px-3">
+                                        <div className="w-full aspect-video overflow-hidden">
+                                            <img
+                                                src={`/img/${imageFile}`}
+                                                alt={`Imagen del proyecto ${proyecto.nombreProyecto}`}
+                                                className="h-full w-full object-contain"
                                             />
                                         </div>
-                                    ))}
                                     </div>
-                                </div>
+                                )}
                                 <div className="h-full flex flex-col justify-between px-5">
                                     <div>
-                                        <h5 className="flex flex-col my-3 text-xl text-center text-white font-bold tracking-tight">{proyecto.nombreProyecto}</h5>
-                                        <ul className="flex items-center justify-center gap-3 mb-2">
+                                        <ul className="flex items-center justify-center gap-3 mt-3 mb-2">
                                         {proyecto.tecnologias.map((tecnologia, index) => (
                                             <li key={index} className="flex items-center gap-1 text-text px-4 py-1.5 text-sm font-medium border border-text border-opacity-30 rounded-full bg-[#07090D] bg-opacity-60">
-                                                <img className="w-5 h-5" src={`/img/${tecnologia.image}.svg`} alt={`imagen de logo ${tecnologia.nombre}`}/>
+                                                {tecnologia.image && <img className="w-5 h-5" src={`/img/${tecnologia.image}.svg`} alt="" />}
                                                 <p>{tecnologia.name}</p>
                                             </li>
                                         ))}
                                         </ul>
-                                        <p className="mb-4 font-normal text-grisclaro2 [text-wrap:pretty]">{proyecto.descripcionProyecto}</p>
+                                        {proyecto.descripcionProyecto && (
+                                            <p className="mt-4 mb-4 font-normal text-grisclaro2 [text-wrap:pretty]">{proyecto.descripcionProyecto}</p>
+                                        )}
                                     </div>
-                                    <div className="flex gap-3 items-center justify-center pb-5">
-                                        <a target="_blank" href={proyecto.sitioWeb} className="flex flex-1 gap-1 items-center justify-center py-2.5 px-5 text-sm text-white font-medium  bg-colorboton rounded-full border transition duration-300 hover:bg-colorboton hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(30,125,103,0.7)]">
-                                            Sitio Web
-                                            <IconGlobal />
-                                        </a>
-                                        <a target="_blank" href={proyecto.github} className="flex flex-1 gap-1 items-center justify-center py-2.5 px-5 text-sm text-white font-medium  bg-transparent rounded-full border transition duration-300 hover:bg-colorboton2 hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(77,30,125,0.7)]">
-                                            Github
-                                            <IconGithub />
-                                        </a>
-                                    </div>
+                                    {(proyecto.sitioWeb || proyecto.github) && (
+                                        <div className="flex gap-3 items-center justify-center pb-5">
+                                            {proyecto.sitioWeb && (
+                                                <a target="_blank" rel="noopener noreferrer" href={proyecto.sitioWeb} className="flex flex-1 gap-1 items-center justify-center py-2.5 px-5 text-sm text-white font-medium bg-colorboton rounded-full border transition duration-300 hover:bg-colorboton hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(30,125,103,0.7)]">
+                                                    Sitio Web
+                                                    <IconGlobal />
+                                                </a>
+                                            )}
+                                            {proyecto.github && (
+                                                <a target="_blank" rel="noopener noreferrer" href={proyecto.github} className="flex flex-1 gap-1 items-center justify-center py-2.5 px-5 text-sm text-white font-medium bg-transparent rounded-full border transition duration-300 hover:bg-colorboton2 hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(77,30,125,0.7)]">
+                                                    Github
+                                                    <IconGithub />
+                                                </a>
+                                            )}
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         )

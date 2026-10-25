@@ -78,7 +78,7 @@ export default function Contacto() {
                                 <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <p className='text-white text-sm font-semibold'>El Salvador</p>
+                            <p className='text-white text-sm font-semibold'>Valencia, España</p>
                         </div>
                         <img className='w-auto h-56' src="/img/redes.svg" alt="imagen de redes" />
                         <p className='mb-3 mt-3 text-2xl text-white text-center md:text-left font-bold tracking-tight'>Redes Sociales</p>

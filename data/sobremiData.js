@@ -1,28 +1,28 @@
 export const sobremiData = {
     titulo: "¿Quién Soy?",
-    descripcion1: "Soy Raúl Larrea, y mi pasión por la tecnología, la programación y el diseño me impulsa cada día. Como desarrollador web, me he especializado en el fascinante mundo del FrontEnd. ",
-    descripcion2: "Disfruto desafiando los límites y explorando nuevas tecnologías para ofrecer soluciones creativas y efectivas.",
-    descripcion3: "Innovador, proactivo y con capacidad para diseñar, crear y mantener sitios web, atractivos e interactivos. Me adapto a las necesidades del equipo y me comprometo con los objetivos de trabajo establecidos.",
+    descripcion1: "Soy Raúl Larrea, graduado en Ingeniería Informática y apasionado por la tecnología y sus posibilidades. Me interesa comprender cómo funcionan los sistemas, explorar nuevas herramientas y encontrar soluciones a problemas de distinta naturaleza.",
+    descripcion2: "Me motiva seguir aprendiendo, afrontar nuevos retos y ampliar mis conocimientos en diferentes áreas de la informática.",
+    descripcion3: "Me considero una persona curiosa, analítica y comprometida, con ganas de crecer profesionalmente, aportar ideas y colaborar en proyectos donde la tecnología pueda marcar la diferencia.",
     imagen: "sobremi"
 }
 
 export const habilidadesData = [
     {
         id:1,
-        name: "UX/UI Design",
+        name: "Desarrollo de SW",
         icon: "uxdesign",
-        description: "Enfocado en comprender los usuarios, solucionar problemas y crear prototipos para experiencias digitales excepcionales"
+        description: "Me gusta convertir ideas en aplicaciones útiles y encontrar formas de hacer las cosas mejor."
     },
     {
         id:2,
-        name: "Ingeniero Informático",
+        name: "Ciberseguridad",
         icon: "frontend",
-        description: "Creación de interfaces de usuarios innovadoras con buenas prácticas, diseños responsives y optimizaciones del contenido"
+        description: "Me interesa entender cómo se pueden proteger los sistemas y anticiparse a posibles riesgos."
     },
     {
         id:3,
-        name: "Tecnologias",
+        name: "NUEVAS TECNOLOGÍAS",
         icon: "tecnologias",
-        description: "Stack de herramientas de diseño y lenguajes de desarrollo para ofrecer soluciones digitales de alto rendimiento"
+        description: "Siempre hay algo nuevo que explorar, aprender y llevar más allá."
     }
 ]

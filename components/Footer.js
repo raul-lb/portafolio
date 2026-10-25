@@ -10,7 +10,7 @@ export default function Footer() {
                         <a href="#">
                             <Image src="/img/logo.svg" width={110} height={35} alt="Logo Raúl Larrea" />
                         </a>
-                        <p className="text-white ">Transformando ideas en realidad a traves de codigo limpio y soluciones innovadoras</p>
+                        <p className="text-white ">Apasionado por la tecnología, los sistemas y la creación de soluciones digitales eficientes.</p>
                         <ul className='flex gap-4 mt-4'>
                         {redesData.map(red => (
                             <li  key={red.id} className='cursor-pointer transition-all duration-300 hover:scale-150'>

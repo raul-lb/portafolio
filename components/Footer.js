@@ -8,9 +8,9 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-center items-center md:items-start md:justify-between mx-3 md:mx-0 py-10 font-body">
                     <div className="flex flex-col items-center md:items-start md:text-left justify-center mb-5 md:mb-0 text-center md:w-1/3 [text-wrap:balance]">
                         <a href="#">
-                            <Image src="/img/logo.svg" width={110} height={35} alt="Logo Raúl Larrea" />
+                            <Image src="/img/logo.svg" width={150} height={34} alt="Logo Raúl Larrea" />
                         </a>
-                        <p className="text-white ">Apasionado por la tecnología, los sistemas y la creación de soluciones digitales eficientes.</p>
+                        <p className="mt-3 text-white">Apasionado por la tecnología, los sistemas y la creación de soluciones digitales eficientes.</p>
                         <ul className='flex gap-4 mt-4'>
                         {redesData.map(red => (
                             <li  key={red.id} className='cursor-pointer transition-all duration-300 hover:scale-150'>
@@ -33,7 +33,7 @@ export default function Footer() {
                             ))}
                         </ul>
                     </div>
-                    <div className="flex items-center flex-col mt-3 md:mt-0">
+                    <div className="flex flex-col items-center md:items-start mt-3 md:mt-0">
                         <h2 className="text-white uppercase font-semibold mb-3">sobre esta web</h2>
                         <p className="text-white  mb-3">Creado con:</p>
                         <ul className="flex gap-3 md:gap-0 md:flex-col mb-3 space-y-1">

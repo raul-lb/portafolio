@@ -1,42 +1,65 @@
 export const logrosData = [
     {
         id: 1,
-        titulo: "Primer lugar en Hackathon 2023",
-        descripcion: "Proyecto Upskilling And Reskilling Challange 2023 en colaboración con el BID y Ministerio de Economía.",
-        fecha: "21 de Junio de 2023",
-        imagen: "certificado-hackathon",
-        sitioWeb: "https://drive.google.com/file/d/1XvuIzo3gR9b-oO6BU6PMsYRe-O1SgCu-/view"
+        titulo: "Curso de iniciación a la IA",
+        descripcion: "Formación introductoria sobre inteligencia artificial y ChatGPT. Duración: 6 horas.",
+        fecha: "6 de septiembre de 2026",
+        fechaISO: "2026-09-06",
+        imagen: "certificado-ia",
+        archivo: "/Certificado-Raul-Larrea-Baldovi-3fzoovf5.pdf"
     },
     {
         id: 2,
-        titulo: "FrontEnd - JavaScript, Jquery y React (Basico-Intermedio)",
-        descripcion: "Duración: 60 horas, impartido virtualmente por FORMAS de FIDESAL.",
-        fecha: "13 de abril de 2023",
-        imagen: "certificado-frontend",
-        sitioWeb: "https://drive.google.com/file/d/1IT6cvtkpq6Oa9QJmeHCY71iF607PuU2E/view"
+        titulo: "Ciberseguridad y Hacking Ético",
+        descripcion: "Jornadas sobre detección de vulnerabilidades y defensa digital. Duración: 6 horas.",
+        fecha: "10 de abril de 2026",
+        fechaISO: "2026-04-10",
+        imagen: "certificado-ciberseguridad",
+        archivo: "/Certificado-Raul-Larrea-Baldovi-y5ge6mwb.pdf"
     },
     {
         id: 3,
-        titulo: "Diseño de Experiencia de Usuario (UX) de Google",
-        descripcion: "Desarrollo de habilidades completas de diseño UX.",
-        fecha: "3 de febrero de 2023",
-        imagen: "certificado-google",
-        sitioWeb: "https://www.coursera.org/account/accomplishments/specialization/certificate/VQAXVP8VHJ25"
+        titulo: "Buscar en Internet",
+        descripcion: "Curso de la Universitat Politècnica de València en edX. Duración: 28 horas.",
+        fecha: "28 de enero de 2026",
+        fechaISO: "2026-01-28",
+        imagen: "certificado-buscar-internet",
+        archivo: "/UPValenciaX BI101x Certificado _ edX.pdf"
     },
     {
         id: 4,
-        titulo: "Administracion de Proyectos: Principios Basicos",
-        descripcion: "Cubre iniciación, planificación, presupuestos, riesgos y cambios en proyectos.",
-        fecha: "29 de abril de 2023",
-        imagen: "certificado-proyectos",
-        sitioWeb: "https://www.coursera.org/account/accomplishments/specialization/certificate/UHAYG32B7TW6"
+        titulo: "Word intermedio: formato y productividad",
+        descripcion: "Herramientas de formato y productividad en Microsoft Word. Curso de la UPV en edX. Duración: 30 horas.",
+        fecha: "27 de enero de 2026",
+        fechaISO: "2026-01-27",
+        imagen: "certificado-word",
+        archivo: "/UPValenciaX WORD201X Certificado _ edX.pdf"
     },
     {
         id: 5,
-        titulo: "Learn English: Beginning Grammar",
-        descripcion: "Fundamentos de gramática inglesa.",
-        fecha: "16 de enero de 2023",
-        imagen: "certificado-ingles",
-        sitioWeb: "https://www.coursera.org/account/accomplishments/specialization/certificate/7DEF2T4S2EQN"
+        titulo: "Introducción a SQL y bases de datos relacionales",
+        descripcion: "Curso de fundamentos de SQL y bases de datos relacionales de la UPV en edX. Duración: 25 horas.",
+        fecha: "26 de enero de 2026",
+        fechaISO: "2026-01-26",
+        imagen: "certificado-sql",
+        archivo: "/UPValenciaX SQL101x Certificado _ edX.pdf"
+    },
+    {
+        id: 6,
+        titulo: "Python: aprender a programar",
+        descripcion: "Curso de programación con Python de la Universitat Politècnica de València en edX. Duración: 32 horas.",
+        fecha: "23 de enero de 2026",
+        fechaISO: "2026-01-23",
+        imagen: "certificado-python",
+        archivo: "/UPValenciaX PY101x Certificado _ edX.pdf"
+    },
+    {
+        id: 7,
+        titulo: "Introducción a Linux",
+        descripcion: "Curso de The Linux Foundation y la Universitat Politècnica de València en edX. Duración: 98 horas.",
+        fecha: "20 de enero de 2026",
+        fechaISO: "2026-01-20",
+        imagen: "certificado-linux",
+        archivo: "/LinuxFoundationX_UPValenciaX LF-UPV-101x Certificado _ edX.pdf"
     }
 ]

@@ -10,19 +10,19 @@ export const habilidadesData = [
     {
         id:1,
         name: "Desarrollo de SW",
-        icon: "uxdesign",
+        icon: "codigo",
         description: "Me gusta convertir ideas en aplicaciones útiles y encontrar formas de hacer las cosas mejor."
     },
     {
         id:2,
         name: "Ciberseguridad",
-        icon: "frontend",
+        icon: "seguridad",
         description: "Me interesa entender cómo se pueden proteger los sistemas y anticiparse a posibles riesgos."
     },
     {
         id:3,
         name: "NUEVAS TECNOLOGÍAS",
-        icon: "tecnologias",
+        icon: "tecnologia",
         description: "Siempre hay algo nuevo que explorar, aprender y llevar más allá."
     }
 ]

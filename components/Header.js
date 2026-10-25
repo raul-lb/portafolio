@@ -16,7 +16,7 @@ export default function Header() {
     <nav className="fixed w-full top-0 z-50 bg-black backdrop-blur-lg bg-opacity-60">
       <div className="max-w-screen-xl px-5 mg:px-0 flex flex-wrap items-center justify-between mx-auto md:w-5/6 lg:w-4/6 py-3 md:pl-0 ">
         <a href='#inicio' className="flex items-center pl-0">
-          <img src="/img/logo.svg" width={110} height={35} alt="Logo Raúl Larrea" />
+          <img src="/img/logo.svg" width={150} height={34} alt="Logo Raúl Larrea" />
         </a>
         <button
           onClick={toggleMenu}

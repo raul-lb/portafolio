@@ -1,4 +1,15 @@
 import { sobremiData, habilidadesData } from "../data/sobremiData"
+import {
+    CodeBracketSquareIcon,
+    ShieldCheckIcon,
+    CpuChipIcon,
+} from "@heroicons/react/24/outline"
+
+const iconosHabilidad = {
+    codigo: CodeBracketSquareIcon,
+    seguridad: ShieldCheckIcon,
+    tecnologia: CpuChipIcon,
+}
 
 export default function Sobremi() {
 
@@ -17,24 +28,30 @@ export default function Sobremi() {
                         <p className="mb-4 text-grisclaro2 lg:text-base 2xl:text-lg [text-wrap:pretty]">{sobremiData.descripcion1}</p>
                         <p className="mb-4 text-grisclaro2 lg:text-base 2xl:text-lg [text-wrap:pretty]">{sobremiData.descripcion2}</p>
                         <p className="mb-4 text-grisclaro2 lg:text-base 2xl:text-lg [text-wrap:pretty]">{sobremiData.descripcion3}</p>
-                        <span className='inline-flex h-full animate-background-shine items-center justify-center rounded-full border border-text border-opacity-30 bg-[linear-gradient(110deg,#07090D,45%,#4D4B4B,55%,#07090D)] bg-[length:250%_100%] px-5 py-1.5 text-sm font-medium text-text backdrop-blur-3xl'>
+                        <span className='inline-flex h-full animate-background-shine items-center justify-center rounded-full border border-green-500/80 bg-[linear-gradient(110deg,#07090D,45%,#4D4B4B,55%,#07090D)] bg-[length:250%_100%] px-5 py-1.5 text-sm font-medium text-text shadow-[0_0_12px_rgba(34,197,94,0.16)] backdrop-blur-3xl'>
                             Disponible para trabajar
                         </span>
                     </div>
                 </div>
                 <ul className=" grid gap-8 grid-cols-1 md:grid-cols-3 my-10">
-                    {habilidadesData.map(habilidades => (
+                    {habilidadesData.map(habilidades => {
+                        const Icon = iconosHabilidad[habilidades.icon]
+
+                        return (
                         <li key={habilidades.id} className="relative h-full rounded-xl bg-black border border-grisclaro border-opacity-20 py-5 px-5 bg-opacity-10 [text-wrap:pretty] text-center flex flex-col items-center">
                             <div className='absolute top-0 flex w-full justify-center'>
                                 <div className='left-0 h-[1px] animate-border-width rounded-full bg-gradient-to-r from-[rgba(17,17,17,0)] via-white to-[rgba(17,17,17,0)] transition-all duration-1000' />
                             </div>
                             <div className="flex flex-col items-center space-y-2">
-                                <img src={`/img/${habilidades.icon}.svg`} alt={`imagen de ${habilidades.name}`} className="w-20 h-20 p-2 border border-grisclaro border-opacity-40 rounded-full" />
+                                <div className="flex h-20 w-20 items-center justify-center rounded-full border border-grisclaro border-opacity-40 text-[#20bfa9]">
+                                    {Icon && <Icon aria-hidden="true" className="h-10 w-10" />}
+                                </div>
                                 <h3 className="text-white uppercase font-semibold text-lg">{habilidades.name}</h3>
                                 <p className="text-grisclaro2 font-text text-base">{habilidades.description}</p>
                             </div>
                         </li>
-                    ))}
+                        )
+                    })}
                 </ul>
             </div>
         </div>

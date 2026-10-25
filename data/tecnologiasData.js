@@ -3,7 +3,7 @@ export const tecnologiasData = [
         id: 1,
         nombre: "HTML",
         imagen: "html",
-        descripcion: "Marcado web"
+        descripcion: "Estructura web"
     },
     {
         id: 2,
@@ -21,54 +21,48 @@ export const tecnologiasData = [
         id: 4,
         nombre: "React",
         imagen: "react",
-        descripcion: "Libreria de Javascript"
+        descripcion: "Interfaces de usuario"
     },
     {
         id: 5,
-        nombre: "Node.js",
-        imagen: "nodejs",
-        descripcion: "JavaScript en el servidor"
-    },
-    {
-        id: 6,
-        nombre: "MongoDB",
-        imagen: "mongodb",
-        descripcion: "Base de datos NoSQL"
-    },
-    {
-        id: 7,
         nombre: "Next.js",
         imagen: "nextjs",
         descripcion: "Framework de React"
     },
     {
-        id: 8,
-        nombre: "TailwindCSS",
+        id: 6,
+        nombre: "Tailwind CSS",
         imagen: "tailwind",
         descripcion: "Framework CSS"
     },
     {
+        id: 7,
+        nombre: "Java / Spring Boot",
+        imagen: "springboot",
+        descripcion: "Desarrollo de aplicaciones backend"
+    },
+    {
+        id: 8,
+        nombre: "Supabase",
+        imagen: "supabase",
+        descripcion: "Backend y base de datos"
+    },
+    {
         id: 9,
-        nombre: "SASS",
-        imagen: "sass",
-        descripcion: "Preprocesador CSS"
+        nombre: "Flutter",
+        imagen: "flutter",
+        descripcion: "Aplicaciones multiplataforma"
     },
     {
         id: 10,
-        nombre: "Figma",
-        imagen: "figma",
-        descripcion: "Diseño colaborativo"
+        nombre: "C# / .NET",
+        imagen: "dotnet",
+        descripcion: "Desarrollo de aplicaciones"
     },
     {
         id: 11,
-        nombre: "AdobeXD",
-        imagen: "adobexd",
-        descripcion: "Diseño y prototipado"
-    },
-    {
-        id: 12,
-        nombre: "Photoshop",
-        imagen: "photoshop",
-        descripcion: "Edición de imágenes"
+        nombre: "MySQL",
+        imagen: "mysql",
+        descripcion: "Base de datos relacional"
     }
-];
+]

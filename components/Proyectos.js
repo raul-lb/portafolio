@@ -62,6 +62,22 @@ export default function Proyectos() {
                             </div>
                         )
                     })}
+                    <a
+                        href="https://github.com/raul-lb?tab=repositories"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`group flex min-h-56 flex-col items-center justify-center gap-4 rounded-lg border border-dashed border-[#20bfa9]/50 bg-black/40 px-6 py-8 text-center transition duration-300 hover:-translate-y-1 hover:border-[#20bfa9] hover:shadow-[0_0_24px_rgba(32,191,169,0.16)] ${
+                            proyectosData.length % 2 === 0
+                                ? "md:col-span-2 md:w-1/2 md:justify-self-center"
+                                : "md:col-start-2"
+                        }`}
+                    >
+                        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-[#20bfa9]/10 text-[#20bfa9] transition duration-300 group-hover:scale-110">
+                            <IconGithub height="30px" width="30px" />
+                        </span>
+                        <span className="text-xl font-bold text-white">Más proyectos</span>
+                        <span className="text-sm text-grisclaro2">Explora más proyectos en GitHub</span>
+                    </a>
                 </div>
             </div>
         </div>
